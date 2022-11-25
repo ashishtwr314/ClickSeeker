@@ -11,7 +11,10 @@ function ContentStrategy() {
       </div>
       <div className="flex-1 flex justify-end -mt-40 -mb-12 lg:justify-start lg:mt-0">
         <div>
-          <img src="/assets/light-tower.png" alt="animal-whale" />
+          <img
+            src={process.env.PUBLIC_URL + "/assets/light-tower.png"}
+            alt="animal-whale"
+          />
         </div>
       </div>
     </div>

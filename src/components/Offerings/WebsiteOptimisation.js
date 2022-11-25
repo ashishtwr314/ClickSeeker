@@ -7,7 +7,7 @@ function WebsiteOptimization() {
       <div className="flex-1 ">
         <div>
           <img
-            src="/assets/animal.png"
+            src={process.env.PUBLIC_URL + "/assets/animal.png"}
             alt="animal-whale"
             className="md:mx-auto"
           />

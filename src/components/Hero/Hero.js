@@ -17,12 +17,15 @@ function Header() {
       <div className="flex justify-between items-center">
         <div>
           <div>
-            <img src="/assets/click-seeker-large.png" alt="logo" />
+            <img
+              src={process.env.PUBLIC_URL + "/assets/click-seeker-large.png"}
+              alt="logo"
+            />
           </div>
         </div>
         <div>
           <div>
-            <img src="/assets/menu.png" alt="logo" />
+            <img src={process.env.PUBLIC_URL + "/assets/menu.png"} alt="logo" />
           </div>
         </div>
       </div>

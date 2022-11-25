@@ -7,7 +7,7 @@ function WebsiteAnalytics() {
       <div>
         <div>
           <img
-            src="/assets/radial-chart.png"
+            src={process.env.PUBLIC_URL + "/assets/radial-chart.png"}
             alt="animal-whale"
             className="sm:mx-auto md:mx-auto "
           />

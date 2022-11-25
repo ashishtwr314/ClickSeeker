@@ -45,7 +45,7 @@ function App() {
                 type: "image",
                 image: [
                   {
-                    src: "/assets/bubble.png",
+                    src: process.env.PUBLIC_URL + "/assets/bubble.png",
                     width: 32,
                     height: 32,
                   },
@@ -102,7 +102,7 @@ function App() {
                   enable: false,
                   mode: "repulse",
                   parallax: {
-                    enable: false,
+                    enable: true,
                     force: 60,
                     smooth: 10,
                   },

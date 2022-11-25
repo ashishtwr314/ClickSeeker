@@ -13,14 +13,14 @@ function Offerings() {
         <h2 className="text-center">What We Are Offering</h2>
         <div className="mt-10 md:flex md:flex-wrap md:justify-center  lg:items-start  lg:flex  lg:space-x-4  lg:flex-nowrap">
           <Card
-            icon={"/assets/seo.png"}
+            icon={process.env.PUBLIC_URL + "/assets/seo.png"}
             title={"Website Optimization"}
             description={
               "Building a personalized On-site Optimization strategy to improve sales funnel & increase customer conversion"
             }
           />
           <Card
-            icon={"/assets/seo.png"}
+            icon={process.env.PUBLIC_URL + "/assets/seo.png"}
             title={"Website Optimization"}
             description={
               "Building a personalized On-site Optimization strategy to improve sales funnel & increase customer conversion"
@@ -28,7 +28,7 @@ function Offerings() {
             className="sm:mt-8 md:mt-8 lg:mt-16 mt-4"
           />
           <Card
-            icon={"/assets/seo.png"}
+            icon={process.env.PUBLIC_URL + "/assets/seo.png"}
             title={"Website Optimization"}
             description={
               "Building a personalized On-site Optimization strategy to improve sales funnel & increase customer conversion"
@@ -67,7 +67,10 @@ function Card({ icon, title, description, link, className }) {
       </div>
       <div className="mt-16 mb-9">
         <Button className={"rounded-xl px-4 py-4"}>
-          <img src="/assets/arrow-right.png" alt="arrow-icon" />
+          <img
+            src={process.env.PUBLIC_URL + "/assets/arrow-right.png"}
+            alt="arrow-icon"
+          />
         </Button>
       </div>
     </div>

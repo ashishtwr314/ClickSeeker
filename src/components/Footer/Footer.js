@@ -7,7 +7,10 @@ function Footer() {
       <div className="footer py-7 px-4  space-y-[40px] bg-[#233454] text-[#FFFFFFB2] lg:flex lg:items-start lg:space-y-0 lg:px-32 md:flex md:flex-wrap">
         <div className="md:flex-[50%] lg:flex-1">
           <div className="mb-7">
-            <img src="/assets/click-seeker-small.png" alt="logo" />
+            <img
+              src={process.env.PUBLIC_URL + "/assets/click-seeker-small.png"}
+              alt="logo"
+            />
           </div>
           <p className="max-w-[80%]">
             Lorem ipsum dolor sit amet consectetur. Morbi sit eu placerat
@@ -79,14 +82,14 @@ function SocialMedia() {
         <div className="flex space-x-7 md:space-x-0">
           <div class="">
             <SocialIcons
-              img={"/assets/fb.png"}
+              img={process.env.PUBLIC_URL + "/assets/fb.png"}
               text="Facebook"
               alt={"fb-icon"}
             />
           </div>
           <div class="">
             <SocialIcons
-              img={"/assets/twitter.png"}
+              img={process.env.PUBLIC_URL + "/assets/twitter.png"}
               text="Twitter"
               alt={"tweet-cion"}
             />
@@ -96,14 +99,14 @@ function SocialMedia() {
         <div className="flex space-x-7 md:space-x-0">
           <div class="">
             <SocialIcons
-              img={"/assets/pintrest.png"}
+              img={process.env.PUBLIC_URL + "/assets/pintrest.png"}
               text="Pinterest"
               alt={"pinterest-cion"}
             />
           </div>
           <div class="">
             <SocialIcons
-              img={"/assets/Linkedin.png"}
+              img={process.env.PUBLIC_URL + "/assets/Linkedin.png"}
               text="Linkedin"
               alt={"Linkedin-icon"}
             />
