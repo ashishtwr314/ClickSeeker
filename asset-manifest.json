@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ClickSeeker/static/css/main.117a31d9.css",
-    "main.js": "/ClickSeeker/static/js/main.e0327944.js",
+    "main.js": "/ClickSeeker/static/js/main.c2f41977.js",
     "static/media/hero-bg.png": "/ClickSeeker/static/media/hero-bg.2933422187c4d46a4d4b.png",
     "static/media/aquamarine-path.png": "/ClickSeeker/static/media/aquamarine-path.1df010578527b3090a49.png",
     "index.html": "/ClickSeeker/index.html",
     "main.117a31d9.css.map": "/ClickSeeker/static/css/main.117a31d9.css.map",
-    "main.e0327944.js.map": "/ClickSeeker/static/js/main.e0327944.js.map"
+    "main.c2f41977.js.map": "/ClickSeeker/static/js/main.c2f41977.js.map"
   },
   "entrypoints": [
     "static/css/main.117a31d9.css",
-    "static/js/main.e0327944.js"
+    "static/js/main.c2f41977.js"
   ]
 }
