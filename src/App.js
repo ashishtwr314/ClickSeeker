@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import { useCallback } from "react";
 import { loadFull } from "tsparticles";
 import Offerings from "./components/Offerings/Offerings";
+import Button from "./UtilityComponents/Button";
 
 function App() {
   const particlesInit = useCallback(async (engine) => {
@@ -100,7 +101,7 @@ function App() {
               events: {
                 onHover: {
                   enable: false,
-                  mode: "repulse",
+                  mode: "attract",
                   parallax: {
                     enable: true,
                     force: 60,
@@ -109,7 +110,7 @@ function App() {
                 },
                 onClick: {
                   enable: true,
-                  mode: "repulse",
+                  mode: "pause",
                 },
                 resize: true,
               },
@@ -145,6 +146,32 @@ function App() {
 
       <Hero />
       <Offerings />
+      <div className="relative w-full h-[700px] consultant_wrapper ">
+        <div className="consultant_container  h-[auto]  bg-[#B2DADB] rounded-3xl w-[80%]  mx-auto absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] overflow-hidden">
+          <div className="px-6 pt-12">
+            <h4 className={`text-base text-[#D4494C]`}>
+              Improve Online Preformance
+            </h4>
+            <h2 className="mt-3 mb-2">
+              Want to get your site optimized and ranked in google?
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Morbi sit eu placerat.
+            </p>
+            <Button className={"mt-4"}>Contact Us</Button>
+          </div>
+          {/* <div className="h-full absolute w-full">
+            <div className="absolute sand-layer-front h-[200px] w-full bottom-0 bg-repeat-x"></div>
+            <div className="absolute sand-layer-back h-[200px] w-full bottom-0 -z-10 bg-repeat-"></div>
+          </div> */}
+          <div className=" mt-10 px-6 mb-9 z-10 treasure-box">
+            <img
+              src={process.env.PUBLIC_URL + "/assets/treasure-box.png"}
+              alt="treasure-mobile"
+            />
+          </div>
+        </div>
+      </div>
       <Footer />
     </div>
   );

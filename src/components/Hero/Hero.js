@@ -1,10 +1,11 @@
 import React from "react";
 import Button from "../../UtilityComponents/Button";
 import { red } from "../../utils";
+import Navbar from "../Navbar/Navbar";
 
 function Hero() {
   return (
-    <div className="py-7 px-4 hero lg:px-32">
+    <div className="py-7 px-4 hero lg:px-32 2xl:bg-cover 2xl:bg-[center_-11rem] ">
       <Header />
       <HeaderContent />
     </div>
@@ -16,17 +17,23 @@ function Header() {
     <>
       <div className="flex justify-between items-center">
         <div>
-          <div>
+          <div className="flex items-center space-x-2">
             <img
-              src={process.env.PUBLIC_URL + "/assets/click-seeker-large.png"}
+              src={
+                process.env.PUBLIC_URL + "/assets/click-seeker-large-logo.png"
+              }
+              alt="logo"
+            />
+            <img
+              src={
+                process.env.PUBLIC_URL + "/assets/click-seeker-large-text.png"
+              }
               alt="logo"
             />
           </div>
         </div>
         <div>
-          <div>
-            <img src={process.env.PUBLIC_URL + "/assets/menu.png"} alt="logo" />
-          </div>
+          <Navbar />
         </div>
       </div>
     </>
